@@ -6,7 +6,7 @@ def check_server_disk():
     path = '/var/jenkins_home/'
     st = os.statvfs(path)
     free = st.f_bfree/st.f_blocks * 100
-	print(free)
+    print(free)
 
 
 def check_cpu():
@@ -20,4 +20,4 @@ def run():
 
 
 if __name__ == '__main__':
-	run()
+    run()
